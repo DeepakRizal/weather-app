@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Error</title>
+  </head>
+  <body>
+    <div class="error">
+      <% if (data && data.error) { %>
+
+      <div class="statusCode">
+        <span><%= data.error.statusCode %></span>
+      </div>
+      <div class="status">
+        <span><%= data.error.status %></span>
+      </div>
+      <div class="message">
+        <p><%= data.error.message %></p>
+      </div>
+      <% } else { %>
+      <p>An unexpected error occurred.</p>
+      <% } %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+body {
+  background-color: #33acff;
+  font-family: "Poppins", sans-serif;
+}
+.app-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #eedddd;
+  text-align: center;
+}
+.city-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+/*  form styles */
+.weather-search-form {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-search-form label {
+  font-weight: bold;
+  color: white;
+  font-size: 35px;
+}
+
+.weather-search-form input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.weather-search-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.weather-search-form button:hover {
+  background-color: #45a049;
+}
+
+.weather-search-form button:focus {
+  outline: none;
+}
+
+/* Optional: Add a subtle animation on form elements */
+.weather-search-form input[type="text"],
+.weather-search-form button {
+  transition: all 0.3s ease;
+}
+
+.weather-search-form input[type="text"]:focus {
+  border-color: #5ac8fa;
+}
+
+.weather-search-form button:hover {
+  background-color: #57a744;
+  transform: scale(1.05);
+}
+.search-page {
+  background-image: url("https://media.istockphoto.com/id/503555248/photo/stars-from-galaxy-in-the-dark-sky.jpg?s=612x612&w=0&k=20&c=DHikfiLVtxglZPRMX_7i5uDJvQh53er9QgCjvjZYuNk=");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin: 100px auto;
+  display: flex;
+  margin-top: 110px;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.tophr {
+  border: 1px solid #ccc;
+  margin: 79px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.weatherContainer img {
+  width: 200px;
+}
+
+.temp_c {
+  font-size: 45px;
+  font-weight: bolder;
+}
+.location {
+  display: flex;
+  gap: 10px;
+}
+
+.weather-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.fa-solid {
+  margin-right: 10px;
+  color: rgb(46, 44, 44);
+}
+.bottomhr {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.fa-temperature-three-quarters {
+  font-size: 25px;
+}
+.fa-droplet {
+  font-size: 25px;
+}
+/* styles for error page */
+/* Styles for the error page container */
+.error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+/* Styles for the error message elements */
+.statusCode {
+  font-size: 45px;
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.status {
+  font-size: 45px;
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Style for the "An unexpected error occurred." message */
+.error p {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
